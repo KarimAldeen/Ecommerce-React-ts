@@ -1,0 +1,29 @@
+
+@mixin Shadow {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.07);
+
+}
+
+
+@mixin Flex {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+
+@mixin Hover {
+
+  &:hover{  
+      color: var(--secondary);
+  }
+}
+
+@mixin Hover_outline_characters {
+
+  &:hover{  
+text-shadow: 2px 2px  var(--secondary);
+
+  }
+}
