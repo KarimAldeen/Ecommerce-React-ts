@@ -7,8 +7,10 @@ const NavBar = () => {
   return (
     <div>
          <TopBar/>
-      <MidBar/>
+     <div className='FnBar'>
+       <MidBar/>
       <BottomBar/>
+     </div>
     </div>
   )
 }

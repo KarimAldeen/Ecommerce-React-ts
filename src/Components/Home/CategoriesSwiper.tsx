@@ -6,43 +6,44 @@ import 'swiper/css/pagination';
 import { FreeMode, Pagination } from 'swiper/modules';
 import CardProduct from './CardProduct';
 import { TProduct } from '../../Layout/app/Types';
+import Categories from './Categories';
 
 
-interface CardSwiperProps {
-  data: TProduct[];
+interface CategoriesSwiperProps {
+  data: string[];
 }
 
-const CardSwiper: React.FC<CardSwiperProps> = ({ data }) => {
+const CategoriesSwiper: React.FC<CategoriesSwiperProps> = ({ data }) => {
   return (
-    <div className='CardSwiper'>
+    <div className='CategoriesSwiper'>
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
         freeMode={true}
       
         breakpoints={{
-          300: {
+          0: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          500: {
+          400: {
             slidesPerView: 3,
             spaceBetween: 20,
           },
-          650: {
-            slidesPerView: 2,
+          600: {
+            slidesPerView: 4,
             spaceBetween: 20,
           },
           900: {
-            slidesPerView: 3,
+            slidesPerView: 5,
             spaceBetween: 40,
           },
           1200: {
-            slidesPerView: 4,
+            slidesPerView: 5,
             spaceBetween: 50,
           },
           1500: {
-            slidesPerView: 5,
+            slidesPerView: 5 ,
             spaceBetween: 50,
           },
         }}
@@ -52,7 +53,7 @@ const CardSwiper: React.FC<CardSwiperProps> = ({ data }) => {
         {
           data?.map((item,index)=>{
             return(
-              <SwiperSlide key={index}><CardProduct item={item} /></SwiperSlide>
+              <SwiperSlide key={index}><Categories item={item} index={index} /></SwiperSlide>
 
             )
           })
@@ -63,4 +64,4 @@ const CardSwiper: React.FC<CardSwiperProps> = ({ data }) => {
   );
 }
 
-export default CardSwiper;
+export default CategoriesSwiper;

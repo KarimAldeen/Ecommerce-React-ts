@@ -15,7 +15,7 @@ const CartPage: React.FC = () => {
   const propsState = {ViewPage,setViewPage}
   const MemoizedStepsUi = memo(({}) => {
     return <StepsUi {...propsState} />
-  });
+  } );
 
 const RenderPageContent = memo(({ ViewPage}:any) => {
   switch (ViewPage) {

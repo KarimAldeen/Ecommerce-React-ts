@@ -3,6 +3,7 @@ import { BsFacebook, BsGoogle, BsInstagram } from 'react-icons/bs'
 import Theme from '../Utils/Theme'
 import Translate from '../Utils/Translate'
 import { Link } from 'react-router-dom'
+import { MenuFoldOutlined } from '@ant-design/icons'
 
 const TopBar = () => {
   return (
@@ -21,6 +22,10 @@ const TopBar = () => {
           <li><a href="/about"><BsInstagram/></a></li>
 
         </ul>
+        <div className='MenuNav'>
+
+        <MenuFoldOutlined/>
+        </div>
       </nav>
     </header>
   )

@@ -1,0 +1,44 @@
+
+
+   @media screen and (max-width: 600px) {
+                    .Menu_Group,.MidBar_Left,.MidBar_Right,.NavMenus{
+                        display: none;
+                    }
+                 
+                    
+                    .FnBar{
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: center;
+                        justify-content: center;
+                        // padding-inline: 10px;
+.MidBar,.BottomBar{
+    min-width: 45%;
+                    }
+                    }
+                    
+   }
+      @media screen and (max-width: 400px) {
+               
+                 
+                    
+                    .FnBar{
+                        display: flex;
+                        flex-direction: column;
+.BottomBar{
+    display: flex;
+    width: 100%;
+    gap: 25%;
+
+                    }
+                    }
+                 .ViewCartViewCart{
+                    display: inline !important;
+                 }
+                 .DropdownMenu{
+                    
+                 }
+
+               
+                    
+   }

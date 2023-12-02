@@ -9,12 +9,10 @@ const useSearchResults = (data: any[] | undefined, query: string | null) => {
     ) ?? [];
 
     setResults(filteredResults);
-    console.log("results",results);
-    console.log("query",query, query?.length);
+
     
     
     if(results?.length === 0 && query != null && query?.length > 1 ){
-      console.log("HEllo");
         
     }
   }, [query]);

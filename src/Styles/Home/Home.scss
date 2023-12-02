@@ -12,6 +12,7 @@
     width: 100% ;
     height: 34vw;
     gap: 6%;
+    color: var(--black);
     .HeroSection_Carousel{
         width: 70%;
         height: 100%;
@@ -40,7 +41,7 @@
         }
 }
  .ant-carousel .slick-initialized .slick-dots-bottom li button{
-    background-color:var(--text) !important;
+    background-color:var(--black) !important;
    }
 }
 .Ad_Container{
@@ -49,7 +50,7 @@
         position: absolute;
         top: 20%;
         left: 10%;
-        color: var(--text);
+        color: var(--black);
         h4{
             font-size:2vw;
         }
@@ -74,7 +75,7 @@
         position: absolute;
         top: 20%;
         left: 10%;
-        color: var(--text);
+        color: var(--black);
         h1{
             font-size: 4vw;
         }
@@ -115,6 +116,11 @@
 
 
     }
+    .Towspecial_property{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
     h5{
         font-size: 1.4vw;
         text-wrap: nowrap;
@@ -122,6 +128,8 @@
     }
     p{
         font-size: 1vw;
+                text-wrap: nowrap;
+
     }
    
     .special_property_last{
@@ -163,6 +171,7 @@
     text-align: right;
     width: 60%;
     &::before {
+        font-size: 2vw;
         inset: 5px;
         z-index: 3;
         content: '';
@@ -213,13 +222,52 @@
     justify-content: space-between;
     align-items: center;
     color: var(--text);
-    font-size: 1.4vw;
+    font-size: 16px;
     svg{
         color: var(--secondary);
-        font-size: 2vw;
+        font-size: 20px;
         margin-inline: 5px;
     }
   }
   .swiper-free-mode > .swiper-wrapper{
     margin: 20px 0px !important;
   }
+
+  .BigAds{
+    display: flex;
+    padding: 10px 5vw;
+    width: 100%;
+    gap: 20px;
+    >div{
+        flex: 50%;
+        height: 150px;
+        position: relative;
+        img{
+            width: 100%;
+                    height: 150px;
+            object-fit: cover;
+        }
+      
+    }
+      .BigAds_Info{
+        padding: 20px;
+            position: absolute;
+            top: 0;
+            color: var(--text);
+
+            >div{
+                display: flex; gap: 5px;
+                strong{
+                    color: var(--secondary);
+                    font-size: 1.4vw;
+                }
+            }
+        } 
+       
+  }
+   .darkMood .BigAds_Info{
+            color: var(--bg) !important;
+        }
+        .Footer{
+            font-size: 1.4vw;
+        }

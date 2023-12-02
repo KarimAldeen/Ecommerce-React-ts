@@ -53,3 +53,12 @@ export  interface FormTableState {
        icon:any
   }
  
+
+  export type TBigAdsData = {
+          header : string,
+            img : string ,
+            mainText:string,
+            textPrice:string,
+            Price:string,
+            color:string
+    }

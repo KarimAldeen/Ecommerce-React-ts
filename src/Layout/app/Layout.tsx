@@ -3,12 +3,12 @@ import NavBar from '../../Components/NavBar/NavBar'
 import Footer from './Footer'
 
 
-const Layout = ({ children ,className = "Layout_Body" }: { children: React.ReactNode ,className?: string }) => {
+const Layout = ({ children ,className=""}: { children: React.ReactNode ,className?: string }) => {
 
   return (
  <div className='Layout'>
      <NavBar/>
-    <main className={className}>
+    <main className={`${className} Layout_Body`}>
         {children}
     </main>
     <Footer/>

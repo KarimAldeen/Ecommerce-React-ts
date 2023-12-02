@@ -5,6 +5,7 @@ import Auth from './Pages/Auth/Page';
 import Page from './Pages/Home/Page';
 import Product from './Pages/Product/Product';
 import CartPage from './Pages/Cart/CartPage';
+import Products from './Pages/Product/Products';
 const Page404 = lazy(() => import("./Layout/app/NotFoundPage"))
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/auth" element={<Suspense fallback={<Loading />}> <Auth /></Suspense>} />
       <Route path="/" element={<Suspense fallback={<Loading />}> <Page /></Suspense>} />
       <Route path="/product/:id" element={<Suspense fallback={<Loading />}> <Product /></Suspense>} />
+      <Route path="/products" element={<Suspense fallback={<Loading />}> <Products /></Suspense>} />
       <Route path="/cart" element={<Suspense fallback={<Loading />}> <CartPage /></Suspense>} />
 
     </Routes>

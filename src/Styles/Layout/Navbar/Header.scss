@@ -86,4 +86,25 @@
     @include Flex;
     gap: 20px;
    }
- 
+ .MenuNav{
+    display: none;
+ }
+
+ .NavMenus .ant-space-item span{
+ color:var(--text);
+}
+
+/* Svg */
+.MidBar_Right a svg{
+ color:var(--text);
+}
+
+/* Svg */
+.MidBar_Right .ViewCart svg{
+ color:var(--text);
+}
+
+/* Special property */
+.special_properties .Towspecial_property .special_property{
+ color:var(--text);
+}

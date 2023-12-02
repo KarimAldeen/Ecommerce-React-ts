@@ -35,8 +35,7 @@ const Footer = () => {
               />
               <p>
                 Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                content
               </p>
             </div>
             {/* Grid column */}
@@ -58,16 +57,7 @@ const Footer = () => {
                   MDWordPress
                 </a>
               </p>
-              <p>
-                <a href="#!" className="text-white">
-                  BrandFlow
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-white">
-                  Bootstrap Angular
-                </a>
-              </p>
+            
             </div>
             {/* Grid column */}
             {/* Grid column */}
@@ -88,16 +78,7 @@ const Footer = () => {
                   Become an Affiliate
                 </a>
               </p>
-              <p>
-                <a href="#!" className="text-white">
-                  Shipping Rates
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-white">
-                  Help
-                </a>
-              </p>
+          
             </div>
             {/* Grid column */}
             {/* Grid column */}
@@ -114,12 +95,7 @@ const Footer = () => {
               <p>
                 <i className="fas fa-envelope mr-3" /> info@example.com
               </p>
-              <p>
-                <i className="fas fa-phone mr-3" /> + 01 234 567 88
-              </p>
-              <p>
-                <i className="fas fa-print mr-3" /> + 01 234 567 89
-              </p>
+           
             </div>
             {/* Grid column */}
           </div>

@@ -264,3 +264,30 @@
 }
 
 }
+
+/* Ant result title */
+.ReviewBody .ant-result-success .ant-result-title{
+ color: var(--text);
+}
+
+/* Ant result subtitle */
+.ReviewBody .ant-result-success .ant-result-subtitle{
+ color: var(--text);
+
+}
+
+/* Ant steps item title */
+.ant-steps-label-horizontal .ant-steps-item .ant-steps-item-title{
+ color:var(--text) !important;
+}
+
+/* Ant steps item description */
+.ant-steps-label-horizontal .ant-steps-item .ant-steps-item-description{
+ color:var(--text) !important;
+}
+
+
+.PaymentBody_Left span span{
+  color:var(--text) !important;
+
+}

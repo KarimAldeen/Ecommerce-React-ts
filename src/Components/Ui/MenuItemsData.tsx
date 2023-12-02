@@ -145,22 +145,22 @@ export const menuData: MenuItem[] = [
       href: 'https://www.example.com',
     },
     {
-      key: '1',
+      key: '3',
       name: '1st menu item',
       href: 'https://www.antgroup.com',
     },
     {
-      key: '2',
+      key: '4',
       name: '2nd menu item',
       href: 'https://www.example.com',
     },
     {
-      key: '1',
+      key: '5',
       name: '1st menu item',
       href: 'https://www.antgroup.com',
     },
     {
-      key: '2',
+      key: '6.NavMenus',
       name: '2nd menu item',
       href: 'https://www.example.com',
     },

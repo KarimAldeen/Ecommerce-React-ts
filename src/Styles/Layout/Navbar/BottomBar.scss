@@ -5,7 +5,9 @@
     padding-inline: 5vw;
     gap: 5%;
     border-bottom: 1px solid var(--bg2);
-
+ .ViewCart{
+    display: none;
+   }
 }
 .DropdownMenu{
     width: 100%;
@@ -22,7 +24,7 @@
 .NavMenus{
     padding-left: 20vw;
     flex: 70%;
-    @include Flex;
+    display: flex; justify-content: flex-end; align-items: center;
     gap: 5%;
 }
 
@@ -56,3 +58,4 @@
     min-width: 120px;
    }
    
+  

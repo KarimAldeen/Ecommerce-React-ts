@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Rate, Skeleton, Tooltip } from 'antd';
+import {  Rate, Skeleton, Tooltip } from 'antd';
 import { EyeFilled, HeartFilled, PlusOutlined } from '@ant-design/icons';
 import { TProduct } from '../../Layout/app/Types';
 import { Currency } from '../../Layout/app/Const';

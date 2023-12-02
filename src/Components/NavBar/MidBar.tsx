@@ -1,10 +1,8 @@
 import KarimLogo from '../../Layout/app/KarimLogo'
 import InputAutoComplete from './InputAutoComplete'
-import {  Badge, Button } from 'antd';
-import { ProfileFilled, ShoppingCartOutlined, UserOutlined } from '@ant-design/icons';
-import WithDrawer from '../../HighOrderComponent/WithDrawer';
-import CardItem from '../Ui/CardItem';
 import { Link } from 'react-router-dom';
+import ViewCart from './ViewCart';
+import { UserOutlined } from '@ant-design/icons';
 
 const MidBar = () => {
 
@@ -19,36 +17,12 @@ const MidBar = () => {
         </div>
         <div className='MidBar_Right'>
         <div className="Cart_Icon">
+        <Link to="/auth">
           <UserOutlined  />
+        </Link>
 
           </div>
-    <WithDrawer
-    title="Cart Item"
-      button={ 
-      <Badge className='Badge_Button' count={3}>
-          <div className="Cart_Icon">
-          <ShoppingCartOutlined  />
-
-          </div>
-    </Badge>
-    }
-    >
-      <div className='Drawer_Body'>
-      <div className='Card_Items'>
-      <CardItem/>
-     <CardItem/>
-     <CardItem/>
-      </div>
-    
-    <div className='ViewCart_Button'>
-   <Link to='/cart'>  <Button type="primary" block>
-      view cart
-    </Button> </Link>
-    </div>
-      </div>
-    
- 
-    </WithDrawer>
+   <ViewCart/>
     
          
         </div>

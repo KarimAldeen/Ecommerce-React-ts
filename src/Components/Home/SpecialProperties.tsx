@@ -5,7 +5,8 @@ import { BsCalendarDay } from 'react-icons/bs'
 const SpecialProperties = () => {
   return (
     <div className='special_properties'>
-    <div className='special_property'>
+      <div className='Towspecial_property'>
+           <div className='special_property'>
      <CarFilled/>
      <div>
        <h5>Fast Delivery</h5>
@@ -20,7 +21,9 @@ const SpecialProperties = () => {
        <p>7 Days Back</p>
      </div>
     </div>
-    <div className='special_property'>
+      </div>
+      <div className='Towspecial_property'>
+           <div className='special_property'>
      <BsCalendarDay/>
      <div>
        <h5>365 Days</h5>
@@ -34,6 +37,7 @@ const SpecialProperties = () => {
        <p>Secure system</p>
      </div>
     </div>
+      </div>
     </div>  )
 }
 
