@@ -29,3 +29,26 @@ text-shadow: 2px 2px  var(--secondary);
 }
 
 
+
+@mixin underLineText{
+  background-image: linear-gradient(90deg, red , blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 500ms ease-in-out;
+  &:hover{
+      background-size: 100% 3px;
+
+  }
+}
+.underLineText{
+    background-image: linear-gradient(90deg, red , blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 500ms ease-in-out;
+  &:hover{
+      background-size: 100% 3px;
+
+  }
+}

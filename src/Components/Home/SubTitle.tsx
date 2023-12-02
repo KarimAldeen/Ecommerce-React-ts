@@ -1,6 +1,7 @@
 import React from 'react'
 import { TSubTitle } from '../../Layout/app/Types';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const SubTitle = ({title,href,count,icon}:TSubTitle) => {
   const [t] = useTranslation()
@@ -11,9 +12,9 @@ const SubTitle = ({title,href,count,icon}:TSubTitle) => {
        {t(`${title}`)}
         </div>
         <div>
-            <a href={`/${href}`}>
+            <Link to={`${href}`}>
             {t("See more")}{count}
-            </a>
+            </Link>
         </div>
 
     </div>

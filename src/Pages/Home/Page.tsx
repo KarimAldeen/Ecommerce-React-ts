@@ -15,10 +15,10 @@ const Page = () => {
       <HeroSection />
       <SpecialProperties />
       <CategoriesSwiper data={CategoriesData} />
-      <MovesAds LeftText=' Black Friday Sales Left' RightText='PAY ONLY FOR YOUR LOVING ELECTRONICS' Link='/hi' />
-      <ProductSection title="title" href="/" data={data} count={10} icon={<IoIosFlash />} />
+      <MovesAds LeftText=' Black Friday Sales Left' RightText='PAY ONLY FOR YOUR LOVING ELECTRONICS' Link='/products' />
+      <ProductSection title="title" href="/products" data={data} count={10} icon={<IoIosFlash />} />
       <BigAds data={BigAdsData} />
-      <ProductSection title="title" href="/" data={data} count={10} icon={<IoIosFlash />} />
+      <ProductSection title="title" href="/products" data={data} count={10} icon={<IoIosFlash />} />
     </Layout>
   )
 }
