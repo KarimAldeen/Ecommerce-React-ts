@@ -1,3 +1,9 @@
+import { ReactNode } from "react";
+
+export type Tchildren = {
+  children : ReactNode
+}
+
 export  interface FormTableState {
     objectToEdit: any[]; 
     OpenEdit: boolean;
