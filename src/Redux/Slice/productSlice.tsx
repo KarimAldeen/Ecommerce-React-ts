@@ -14,6 +14,7 @@ const initialState: ProductState = {
         href: '',
         count: 0,
         icon: null,
+        
     },
 }
 

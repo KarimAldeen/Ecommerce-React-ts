@@ -13,10 +13,14 @@ import { IoIosFlash } from "react-icons/io"
     old_price:250,
     brand : "karim",
     description:"Wireless Bluetooth HeadsetFM Frequency Response: 87.5 108 MHz Feature: FM Radio, Card Supported (Micro SD / TF)Made in China",
+    type:"Neck Sweater",
+    count:1,
 
-
-  }
+  } 
+  export const AllProductdata :TProduct[] = [  Product,Product,Product,Product,Product,Product,Product,Product,Product,Product ,Product,Product,Product,Product,Product  ] 
  export const data :TProduct[] = [  Product,Product,Product,Product,Product ] 
+  export const Cartdata :TProduct[] = [  Product,Product,Product ] 
+
     export  const ProductSectionData: TCardProduct ={
         data :data,
         title:"title" ,

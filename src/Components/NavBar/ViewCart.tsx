@@ -4,14 +4,16 @@ import { Badge, Button } from 'antd'
 import { ShoppingCartOutlined } from '@ant-design/icons'
 import CardItem from '../Ui/CardItem'
 import { Link } from 'react-router-dom'
+import { useCartData } from '../../Redux/DispatchData'
 
 const ViewCart = () => {
+  const { DataCart,count} = useCartData()
   return (
     <div className='ViewCart'>
          <WithDrawer
     title="Cart Item"
       button={ 
-      <Badge className='Badge_Button' count={3}>
+      <Badge className='Badge_Button' count={count}>
           <div className="Cart_Icon">
           <ShoppingCartOutlined  />
 
@@ -20,11 +22,11 @@ const ViewCart = () => {
     }
     >
       <div className='Drawer_Body'>
-      <div className='Card_Items'>
-      <CardItem/>
-     <CardItem/>
-     <CardItem/>
-      </div>
+    <div className='Card_Items'>
+      {DataCart.map((item:any, index:number) => (
+        <CardItem data={item} />
+      ))}
+    </div>
     
     <div className='ViewCart_Button'>
    <Link to='/cart'>  <Button type="primary" block>

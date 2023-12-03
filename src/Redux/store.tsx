@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
-import {HeroSectionReducer,ProductReducer} from './Slice'
+import {AllProductSliceReducer, CartSliceReducer, HeroSectionReducer,ProductReducer} from './Slice'
 
 export const store = configureStore({
   reducer: {
     HeroSection: HeroSectionReducer,
-    Product : ProductReducer
+    Product : ProductReducer,
+    Cart:CartSliceReducer,
+    AllProduct:AllProductSliceReducer,
 
   },
 })

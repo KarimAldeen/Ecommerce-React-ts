@@ -23,7 +23,7 @@ const desc = ['ولا حمار زبط', 'bad', 'normal', 'good', 'عراسي'];
 
   return (
     <div className='ProductsFilter'>
-      <span>ProductsFilter </span>
+      <span className='ProductsFilter_header'>ProductsFilter </span>
       <Divider/> 
       <div>  Categories   </div>
       
@@ -66,7 +66,6 @@ const desc = ['ولا حمار زبط', 'bad', 'normal', 'good', 'عراسي'];
                <Divider/> 
                
  <div>
-    {/* <ProductPagination/> */}
 
  </div>
     </div>

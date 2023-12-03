@@ -6,9 +6,10 @@ interface WithDrawerProps {
   button: React.ReactNode;
   children: ReactNode;
   title:string;
+  className?:string
 }
 
-const WithDrawer: React.FC<WithDrawerProps> = ({ button, children,title ="Basic Drawer" }) => {
+const WithDrawer: React.FC<WithDrawerProps> = ({ button, children,title ="Basic Drawer",className }) => {
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState<DrawerProps['placement']>('right');
 
@@ -29,7 +30,10 @@ const WithDrawer: React.FC<WithDrawerProps> = ({ button, children,title ="Basic 
         open={open}
         key={placement}
       >
+        <div className={className}>
         {children}
+
+        </div>
       </Drawer>
     </>
   );

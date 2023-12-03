@@ -1,6 +1,9 @@
 import { AppstoreOutlined, BarsOutlined } from '@ant-design/icons'
 import { Select } from 'antd'
 import React from 'react'
+import { BsFillTerminalFill } from 'react-icons/bs';
+import WithDrawer from '../../HighOrderComponent/WithDrawer';
+import ProductsFilter from './ProductsFilter';
 
 const ProductsHeader = ({style,setstyle}:any) => {
      const handleChange = (value: string) => {
@@ -12,8 +15,24 @@ const ProductsHeader = ({style,setstyle}:any) => {
           <div> <h6>Searching for “ mobile phone ”</h6> </div>
           <div> <p>48 results found</p> </div>
         </div>
+
         <div className='Products_Header_Right'>
-          <div>Short by:</div>
+
+              <WithDrawer
+              className="showfillter"
+    title="ProductsFilter"
+      button={ 
+          <div className="Cart_Icon">
+          <BsFillTerminalFill  />
+
+          </div>
+    }
+    >
+ <ProductsFilter/>
+    
+ 
+    </WithDrawer>
+          <div className='Shortby'>Short by:</div>
           <div>
             <Select
               defaultValue="Relevance"

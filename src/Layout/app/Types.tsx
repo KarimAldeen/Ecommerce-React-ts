@@ -40,6 +40,8 @@ export  interface FormTableState {
     off :number,
     brand :string,
     description:string,
+      type:string
+    count:number
 
 
 
