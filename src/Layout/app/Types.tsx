@@ -39,6 +39,7 @@ export  interface FormTableState {
 
   }
   export type TCardProduct = {
+    
     title : string;
      href:string;
       data : TProduct[] ;
@@ -62,3 +63,31 @@ export  interface FormTableState {
             Price:string,
             color:string
     }
+
+    export type TbannerData = {
+   imageUrl: string;
+    title: string;
+    subtitle: string;
+    discount: string;
+    link: string;
+    btn: string
+}
+
+
+ export type THeroAd = {
+  imageUrl: string;
+  title: string;
+  subtitle: string;
+  discount: string;
+  link: string;
+  btn:string ;
+}
+
+
+export type TSpecialProperty = {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+export type TMovesAdsData={ LeftText:string;RightText:string; Link:string; }

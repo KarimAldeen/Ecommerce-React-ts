@@ -101,6 +101,7 @@
     padding:  1vw 2vw;
 
     background: var(--bg);
+  
     svg{
         font-size: 2.4vw;
         margin-top: 5px;
@@ -114,8 +115,11 @@
         padding: 0vw 4vw;
         margin-top: 5px;
 
-
+ &:last-child {
+      border-right: none !important; // You may try without !important first
     }
+    }
+    
     .Towspecial_property{
         display: flex;
         justify-content: center;

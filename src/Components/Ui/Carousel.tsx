@@ -1,24 +1,27 @@
 import React from 'react';
 import { Carousel } from 'antd';
+import { TbannerData } from '../../Layout/app/Types';
+import { Link } from 'react-router-dom';
 
+type TCarouselApp = {
+  data:TbannerData[]
+}
 
-const CarouselApp: React.FC = () => (
+const CarouselApp: React.FC <TCarouselApp>= ({data}) => (
   <Carousel autoplay>
-    {[1].map((item,index)=>{
-      return(
-        <div className='banner_Container' key={index}>
-        <img alt='' className='banner1'  src='../HeroSection/banner1.jpg' />
+    {data.map((item:TbannerData, index:number) => (
+      <div className='banner_Container' key={index}>
+        <img alt='' className='banner1' src={item.imageUrl} />
         <div className='banner_Info'>
-              <h1 className='underLineText'>NEW ARRIVALS</h1>
-              <h2>SUMMER SALE <br/> <strong>20% OFF</strong></h2>
-              <a href="/">Shop Now &#8599; </a>
-            </div>
+          <h1 className='underLineText'>{item.title}</h1>
+          <h2>
+            {item.subtitle} <br /> <strong>{item.discount}</strong>
+          </h2>
+          <Link to={item.link}>{item?.btn} &#8599; </Link>
         </div>
-      )
-    })}
-   
-    
-    </Carousel>
+      </div>
+    ))}
+  </Carousel>
 );
 
 export default CarouselApp;

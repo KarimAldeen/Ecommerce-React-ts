@@ -1,6 +1,9 @@
-import { TBigAdsData, TProduct } from "../../Layout/app/Types"
+import { CarFilled, MoneyCollectOutlined, PayCircleFilled } from "@ant-design/icons"
+import { TBigAdsData, TCardProduct, THeroAd, TMovesAdsData, TProduct, TSpecialProperty, TbannerData } from "../../Layout/app/Types"
+import { BsCalendarDay } from "react-icons/bs"
+import { IoIosFlash } from "react-icons/io"
 
-  const Product =   {
+ export const Product =   {
     id : 1,
     name:"Classic Rolex Watch",
     img : "../Product/Product.png",
@@ -14,6 +17,13 @@ import { TBigAdsData, TProduct } from "../../Layout/app/Types"
 
   }
  export const data :TProduct[] = [  Product,Product,Product,Product,Product ] 
+    export  const ProductSectionData: TCardProduct ={
+        data :data,
+        title:"title" ,
+        href:"/products" ,
+       count:10,
+       icon:<IoIosFlash />
+      }
    export  const CategoriesData : string[] = ["Toys","Sports","Gaming","Furniture","Fashion","Cameras"]
  export const BigAdsData:TBigAdsData[]= [
     {
@@ -34,3 +44,82 @@ import { TBigAdsData, TProduct } from "../../Layout/app/Types"
         }
     ]
     
+
+
+
+const adData: THeroAd[] = [
+  {
+    imageUrl: '../HeroSection/ad1.jpg',
+    title: 'NEW ARRIVALS',
+    subtitle: 'SUMMER SALE',
+    discount: '30% OFF',
+    link: '/',
+        btn:"shop now"
+
+  },
+  {
+    imageUrl: '../HeroSection/ad2.jpg',
+    title: 'NEW ARRIVALS',
+    subtitle: 'SUMMER SALE',
+    discount: '40% OFF',
+    link: '/',
+        btn:"shop now"
+
+  },
+];
+
+
+const bannerData : TbannerData[] = [
+  {
+    imageUrl: '../HeroSection/banner1.jpg',
+    title: 'NEW ARRIVALS',
+    subtitle: 'SUMMER SALE',
+    discount: '20% OFF',
+    link: '/',
+    btn:"Shop Now"
+  },
+   {
+    imageUrl: '../HeroSection/banner1.jpg',
+    title: 'NEW ARRIVALS',
+    subtitle: 'SUMMER SALE',
+    discount: '20% OFF',
+    link: '/',
+    btn:"Shop Now"
+  },
+   {
+    imageUrl: '../HeroSection/banner1.jpg',
+    title: 'NEW ARRIVALS',
+    subtitle: 'SUMMER SALE',
+    discount: '20% OFF',
+    link: '/',
+    btn:"Shop Now"
+  },
+];
+export const HeroSectionData = {  bannerData,adData};
+
+
+export const specialPropertiesData: TSpecialProperty[] = [
+  {
+    icon: <CarFilled />,
+    title: 'Fast Delivery',
+    description: 'Start from $10',
+  },
+  {
+    icon: <MoneyCollectOutlined />,
+    title: 'Money Guarantee',
+    description: '7 Days Back',
+  },
+  {
+    icon: <BsCalendarDay />,
+    title: '365 Days',
+    description: 'For free return',
+  },
+  {
+    icon: <PayCircleFilled />,
+    title: 'Payment',
+    description: 'Secure system',
+  },
+];
+
+ export const MovesAdsData :TMovesAdsData={LeftText:' Black Friday Sales Left', RightText:'PAY ONLY FOR YOUR LOVING ELECTRONICS', Link:'/products'}
+

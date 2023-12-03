@@ -1,44 +1,23 @@
-import React from 'react'
-import { CarFilled, MoneyCollectOutlined, PayCircleFilled } from '@ant-design/icons'
-import { BsCalendarDay } from 'react-icons/bs'
+import React from 'react';
+import { TSpecialProperty } from '../../Layout/app/Types';
 
-const SpecialProperties = () => {
+
+type TSpecialProperties = {data : TSpecialProperty[]}
+
+const SpecialProperties: React.FC<TSpecialProperties> = ({data}) => {
   return (
     <div className='special_properties'>
-      <div className='Towspecial_property'>
-           <div className='special_property'>
-     <CarFilled/>
-     <div>
-       <h5>Fast Delivery</h5>
-       <p>Start from $10</p>
-     </div>
+      {data?.map((property, index) => (
+        <div className='special_property' key={index}>
+          {property.icon}
+          <div>
+            <h5>{property.title}</h5>
+            <p>{property.description}</p>
+          </div>
+        </div>
+      ))}
     </div>
-      
-    <div className='special_property'>
-     <MoneyCollectOutlined/>
-     <div className='special_property_Info'>
-       <h5>Money Guarantee</h5>
-       <p>7 Days Back</p>
-     </div>
-    </div>
-      </div>
-      <div className='Towspecial_property'>
-           <div className='special_property'>
-     <BsCalendarDay/>
-     <div>
-       <h5>365 Days</h5>
-       <p>For free return</p>
-     </div>
-    </div>
-    <div className='special_property special_property_last'>
-     <PayCircleFilled/>
-     <div>
-       <h5>Payment</h5>
-       <p>Secure system</p>
-     </div>
-    </div>
-      </div>
-    </div>  )
-}
+  );
+};
 
-export default SpecialProperties
+export default SpecialProperties;

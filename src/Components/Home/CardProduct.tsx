@@ -6,12 +6,15 @@ import { Currency } from '../../Layout/app/Const';
 import useLoadingState from '../../Hooks/useLoadingState';
 import { Link } from 'react-router-dom';
 
+
 interface CardProductProps {
   item: TProduct;
 }
 
 const CardProduct: React.FC<CardProductProps> = ({ item }) => {
   const [loading, resetLoading] = useLoadingState(true, 2000);
+
+
 
   return (
           <Skeleton className='unset' loading={loading} active >
@@ -21,7 +24,10 @@ const CardProduct: React.FC<CardProductProps> = ({ item }) => {
               <div className='Card_Product_Top'>
                 <span className='Left'>{item?.off}% off</span>
                 <span className='Right'>
-                  <Link to='/product/1'><EyeFilled    /></Link> <HeartFilled />
+               <Link to={`/product/${item.id}`}>
+            <EyeFilled />
+          </Link>
+                  <HeartFilled />
                 </span>
               </div>
               <div className='Card_Product_Mid'>
@@ -57,3 +63,4 @@ const CardProduct: React.FC<CardProductProps> = ({ item }) => {
 };
 
 export default CardProduct;
+

@@ -1,31 +1,18 @@
 import React from 'react'
 import CarouselApp from '../Ui/Carousel'
+import HeroAds from './HeroAds'
+import { THeroAd,TbannerData } from '../../Layout/app/Types';
 
-const HeroSection = () => {
+type THeroSection={
+  data :{ bannerData: TbannerData[]; adData: THeroAd[]}
+}
+const HeroSection:React.FC<THeroSection> = ({data}) => {
   return (
 <div className='HeroSection'>
       <div className='HeroSection_Carousel'>
-      <CarouselApp/>
+      <CarouselApp data={data?.bannerData} />
       </div>
-      <div className='HeroSection_Ads'>
-        <div className='Ad_Container'>
-        <img alt='' className='banner1'  src='../HeroSection/ad1.jpg' />
-        <div className='Ad_Info'>
-          <h4 className='underLineText'>NEW ARRIVALS</h4>
-          <h5>SUMMER SALE <br/> <strong>30% OFF</strong></h5>
-          <a href="/">Shop Now  </a>
-        </div>
-        </div>
-        <div className='Ad_Container'>
-        <img alt='' className='banner1'  src='../HeroSection/ad2.jpg' />
-        <div className='Ad_Info'>
-          <h4 className='V'>NEW ARRIVALS</h4>
-          <h5>SUMMER SALE <br/> <strong>40% OFF</strong></h5>
-          <a href="/">Shop Now  </a>
-        </div>
-        </div>
-      </div>
-
+     <HeroAds  data={data?.adData} />
      </div>  )
 }
 

@@ -50,7 +50,7 @@ const CardSwiper: React.FC<CardSwiperProps> = ({ data }) => {
         className="mySwiper"
       >
         {
-          data?.map((item,index)=>{
+          data?.map((item:TProduct,index:number)=>{
             return(
               <SwiperSlide key={index}><CardProduct item={item} /></SwiperSlide>
 
